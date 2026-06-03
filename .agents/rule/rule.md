@@ -1,0 +1,1 @@
+không tự động chạy npm run generate

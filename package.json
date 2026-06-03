@@ -1,0 +1,30 @@
+{
+  "name": "blog-post-analyzer",
+  "version": "2.0.0",
+  "description": "Blog post content analyzer using Cheerio - extract structured data from Vietnix posts",
+  "type": "module",
+  "scripts": {
+    "analyze": "tsx src/analyze.ts",
+    "generate": "tsx src/index.ts",
+    "preview": "tsx src/index.ts --preview",
+    "render": "tsx src/index.ts --render",
+    "fetch-tasks": "tsx src/fetch-tasks.ts",
+    "generate-script": "tsx src/generate-script.ts",
+    "generate-audio": "tsx src/generate-audio.ts",
+    "test:pipeline": "tsx src/index.ts --render --output output/test.mp4"
+  },
+  "dependencies": {
+    "@google/genai": "^2.7.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "openai": "^6.41.0",
+    "pexels": "^1.4.0",
+    "playwright": "^1.60.0",
+    "wavefile": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
